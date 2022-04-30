@@ -1,38 +1,700 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    padding: 1em;
+    -webkit-transition: 600ms ease-in-out;
+    transition: 600ms ease-in-out;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform div.label {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: #0c2a42;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    -webkit-transition: 500ms ease-in-out;
+    transition: 500ms ease-in-out;
   }
-  to {
-    transform: rotate(360deg);
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform div.label div.contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1em;
   }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform div.label div.contents h1 {
+    color: rgba(241, 59, 59, 0.8);
+    margin-bottom: 10px;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform div.label div.contents h3 {
+    color: white;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform div.label div.contents p {
+    color: rgba(255, 255, 255, 0.658);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform div.label div.contents p.thank-you {
+    font-size: 120%;
+    margin-top: 20px;
+    color: #f13b3b;
+    font-weight: bold;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform div.label a.ok {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    display: block;
+    width: 40px;
+    background-color: rgba(241, 59, 59, 0.8);
+    color: rgba(255, 255, 255, 0.705);
+    text-align: center;
+    padding: .5em;
+    border-radius: 5px;
+    text-decoration: none;
+    -webkit-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform div.label a.ok:hover {
+    background-color: #f13b3b;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform div.label.show-label {
+    top: 50%;
+  }
+  
+  @media (max-width: 520px) {
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform div.label {
+      position: absolute;
+      top: -100%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      background-color: #0c2a42;
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+      -webkit-transition: 500ms ease-in-out;
+      transition: 500ms ease-in-out;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform div.label div.contents {
+      margin-top: 0px;
+    }
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div.under-development-inform.show-under-development {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#showcase {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#showcase div.contents {
+    width: 100%;
+    min-height: 100vh;
+    /* background-image: url("../images/undraw_code_review_l1q9.svg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+    padding-bottom: 2em;
+    background-color: #f7f7f7;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents {
+    width: 70%;
+    margin: auto;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.project-heading h2 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 28px;
+    font-weight: 400;
+    padding: 1em 0;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects div.project {
+    position: relative;
+    background-color: #fff;
+    border-top: 5px solid orangered;
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects div.project div.header {
+    display: none;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects div.project div.body {
+    padding: 1em;
+    position: relative;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects div.project div.body div.title h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects div.project div.body div.text {
+    padding: 1em 0em;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects div.project div.body div.tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects div.project div.body div.tags span {
+    font-size: 12px;
+    color: cornflowerblue;
+    font-weight: 400;
+    margin-right: 5px;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects div.project div.body div.view {
+    width: 100%;
+    padding: .5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects div.project div.body div.view a {
+    display: block;
+    width: 100px;
+    text-decoration: none;
+    color: #fff;
+    background-color: orangered;
+    padding: .2em;
+    -webkit-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects div.project div.body div.view a:hover {
+    background-color: rgba(255, 68, 0, 0.829);
+  }
+  
+  @media (max-width: 680px) {
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects {
+      position: relative;
+      width: 100%;
+      display: block;
+      padding-bottom: 2em;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents {
+      width: 95%;
+      margin: auto;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.project-heading h2 {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 28px;
+      font-weight: 400;
+      padding: 1em 0;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects {
+      display: block;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#projects div.project-contents div.projects div.project {
+      margin-bottom: 10px;
+    }
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+    background-color: rgba(255, 68, 0, 0.068);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content {
+    width: 60%;
+    margin-top: auto;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.header div.pro-pic {
+    -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 100px;
+    /* background-image: url("../images/Photo_2.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.header div.name-and-designation {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    line-height: 1em;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.header div.name-and-designation h3 {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+    font-size: 28px;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.header div.name-and-designation h5 {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.body {
+    padding: 1em 0em;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.body div.bio p {
+    color: rgba(0, 0, 0, 0.7);
+    padding: .3em;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.body div.bio a {
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    background-color: orangered;
+    padding: .4em;
+    margin: 20px 0px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    -webkit-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+    -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.body div.bio a:hover {
+    background-color: rgba(255, 68, 0, 0.829);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.body div.tags {
+    width: 100%;
+    padding: .5em;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 3px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 3px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.body div.tags span {
+    color: cornflowerblue;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 680px) {
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about {
+      display: block;
+      background-color: rgba(255, 68, 0, 0.068);
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content {
+      width: 95%;
+      margin: auto;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.header div.pro-pic {
+      -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      width: 80px;
+      height: 80px;
+      /* background-image: url("../images/Photo_2.jpg"); */
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.header div.name-and-designation {
+      margin-left: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      line-height: 1em;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.header div.name-and-designation h3 {
+      color: rgba(0, 0, 0, 0.7);
+      font-weight: 400;
+      font-size: 22px;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#about div.content div.header div.name-and-designation h5 {
+      color: rgba(0, 0, 0, 0.7);
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 75%;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f7f7f7;
+    height: 500px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1em;
+    margin-right: auto;
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    width: 50%;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail h1 {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 28px;
+    font-weight: 500;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.address, div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.email, div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.phone {
+    margin: 20px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.address strong, div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.email strong, div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.phone strong {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.address strong span.icon, div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.email strong span.icon, div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.phone strong span.icon {
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.address .text, div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.email .text, div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.phone .text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.address a.text, div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.email a.text, div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail div.phone a.text {
+    color: cornflowerblue;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1em;
+    width: 50%;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message div.heading h1 {
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message form {
+    width: 70%;
+    margin: auto;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message form div.success {
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message form div.success.show-success {
+    border: 1px solid rgba(5, 90, 5, 0.458);
+    background-color: rgba(5, 90, 5, 0.058);
+    color: rgba(5, 90, 5, 0.458);
+    height: auto;
+    visibility: visible;
+    overflow: auto;
+    opacity: 1;
+    padding: .5em;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message form div.success.show-fail {
+    border: 1px solid rgba(255, 0, 0, 0.458);
+    background-color: rgba(255, 0, 0, 0.058);
+    color: rgba(255, 0, 0, 0.458);
+    height: auto;
+    visibility: visible;
+    overflow: auto;
+    opacity: 1;
+    padding: .5em;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message form div.form-group {
+    margin: 20px 0px;
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message form div.form-group div input.form-control {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: none;
+    padding: 10px 10px;
+    width: 100%;
+    display: block;
+    font-size: 110%;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    -webkit-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+    color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message form div.form-group textarea {
+    width: 100%;
+    display: block;
+    margin: 0;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.04);
+    outline: none;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: .5em;
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message form button {
+    padding: .5em 1em;
+    border: none;
+    background-color: orangered;
+    cursor: pointer;
+    color: white;
+    display: block;
+    border-radius: 3px;
+    margin-left: auto;
+    font-size: 18px;
+    -webkit-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+    -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.5), 0px 0px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message form button:hover {
+    background-color: rgba(255, 68, 0, 0.884);
+  }
+  
+  @media (max-width: 780px) {
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 95%;
+      margin: auto;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      position: relative;
+      display: block;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.2);
+      height: 100%;
+      border-radius: 5px;
+      margin: 20px 0px;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.contact-detail {
+      width: 100%;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message {
+      width: 100%;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message div.heading h1 {
+      text-align: center;
+      position: relative;
+      padding: 20px 0px;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message div.heading h1::after {
+      content: "";
+      display: block;
+      width: 180px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      background-origin: 0;
+      height: 5px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: auto;
+      bottom: 10px;
+    }
+    div#app-wrapper div#container div#homepage-wrapper div.homepage-contents div#contact div.content div.message form {
+      width: 100%;
+    }
 }
