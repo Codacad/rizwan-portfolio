@@ -150,7 +150,7 @@ nav div.nav-side-contents button.login{
 
 div.main-section{
     padding: 5%;
-    background-image: url('./images/dev.jpg');
+    background-image: url('/images/dev.jpg');
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -205,12 +205,7 @@ div.main-section div.main-section-contents p{
     font-family: var(--text-font);
     font-weight: 500;
 }
-div.main-section div.main-section-contents ul.hireme{
-    list-style: none;
-    position: relative;
-    width:100px;
-}
-div.main-section div.main-section-contents ul.hireme a.button{
+div.main-section div.main-section-contents a.hire-me{
     display: block;
     text-decoration: none;
     padding: 10px 20px;
@@ -222,39 +217,11 @@ div.main-section div.main-section-contents ul.hireme a.button{
     border-radius: 3px;
     margin-top:20px;
 }
-
-div.main-section div.main-section-contents ul.hireme ul.popup{
-    display: block;
-    background-color: #F48B29;
-    position: fixed;
-    z-index: 1;
-    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
-    right: 0;
-}
-div.main-section div.main-section-contents ul.hireme ul.popup img{
-    width: 20px;
-    margin-right: 10px;
-    height: 20px;
-}
-div.main-section div.main-section-contents ul.hireme ul.popup li{
-   list-style: none;
-}
-div.main-section div.main-section-contents ul.hireme ul.popup li a{
-    padding:10px 15px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-    margin: 5px 0;
-}
-div.main-section div.main-section-contents ul.hireme ul.popup li a:hover{
-    background-color: rgba(0,0,0,.1);
-}
 div.links{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    align-items:flex-start;
+    align-items:start;
 }
 div.links ul{
     display: flex;
@@ -456,7 +423,7 @@ div.form-group input:focus, div.form-group textarea:focus{
 
 div.resume{
     padding: 5% 15%;
-    background-image: url('./images/wave.svg');
+    background-image: url('/images/wave.svg');
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
